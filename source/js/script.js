@@ -4,8 +4,8 @@ $(document).ready(function(){
     adaptiveHeight: true,
     draggable: true,
     dots: true,
-//    autoplay: true,
-//    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1200,
@@ -20,8 +20,6 @@ $(document).ready(function(){
     infinite: true,
     adaptiveHeight: true,
     draggable: true,
-//    autoplay: true,
-//    autoplaySpeed: 5000,
   });
   
     $('.hits-slider__container').slick({
@@ -29,37 +27,20 @@ $(document).ready(function(){
       adaptiveHeight: true,
       draggable: true,
     });
-//  $('.tabs-slider__container').slick({
-//    infinite: true,
-//    adaptiveHeight: true,
-//    draggable: true,
-//    slidesToShow: 4,
-//    slidesToScroll: 1,
-//    draggable: true,
-//    responsive: [
-//      {
-//        breakpoint: 1025,
-//        settings: {
-//          slidesToShow: 3
-//        }
-//      },
-//      {
-//        breakpoint: 761,
-//        settings: {
-//          slidesToShow: 2
-//        }
-//      },
-//      {
-//        breakpoint: 521,
-//        settings: {
-//          slidesToShow: 1
-//        }
-//      }
-//    ]
-//  });
   
-  $(window).scroll(function () {if ($(this).scrollTop() > 500) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
-  $('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 500); return false;});
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 500) {
+      $('#scroller').fadeIn();
+      $('.to-top__btn').addClass('to-top__btn--visible');
+    } else {
+      $('#scroller').fadeOut();
+      $('.to-top__btn').removeClass('to-top__btn--visible');
+    }
+  });
+  $('#scroller').click(function() {
+    $('body,html').animate({scrollTop: 0}, 500); 
+    return false;
+  });
   
   
   
