@@ -1,0 +1,60 @@
+.to-top {
+  display: none;
+  z-index: 800;
+  position:fixed;
+  left: 50px;
+  bottom: 40px;
+  width:34%;
+  margin-left:50%;
+  text-transform: uppercase;
+  font-size: 11px;
+  
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: .4s;
+  }
+  
+  &__btn {
+    display: none;
+    z-index: 800;
+    position:absolute;
+    left: 56px;
+    bottom:0;
+    margin:0 0 0 100%;
+    padding: 32px 12px 4px;
+    color: $main-color;
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-position: 50% 11px;
+    background-size: 49%;
+    border-radius: 3px;
+    
+    &::before {
+      position: absolute;
+      content: '';
+      top: 24px;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 15px;
+      height: 15px;
+      border-left: 4px solid $main-color;
+      border-top: 4px solid $main-color;
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .to-top {
+    display: block;
+    left: 20px;
+  }
+  .to-top__btn {
+    display: block;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,14 @@
+.section-title {
+  font-family: 'Exo2 Bold', arial;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $large-width) {
+  .section-title {
+    font-size: 28px;
+  }
+}

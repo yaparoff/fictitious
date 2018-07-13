@@ -1,0 +1,42 @@
+.payments {
+  width: 254px;
+  margin: 0 auto;
+}
+.payments__title {
+  font-family: 'Exo2 Bold', arial;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.payments__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.payments__item {
+  background-image: url('../img/sprite.png');
+  
+  &--ya-kassa {
+    width: $payments-yakassa-width;
+    height: $payments-yakassa-height;
+    background-position: $payments-yakassa-offset-x $payments-yakassa-offset-y;
+  }
+  &--visa {
+    width: $payments-visa-width;
+    height: $payments-visa-height;
+    background-position: $payments-visa-offset-x $payments-visa-offset-y;
+    margin-top: 5px;
+  }
+  &--mc {
+    width: $payments-mc-width;
+    height: $payments-mc-height;
+    background-position: $payments-mc-offset-x $payments-mc-offset-y;
+  }
+}

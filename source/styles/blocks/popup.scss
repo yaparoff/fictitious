@@ -1,0 +1,139 @@
+.popup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  cursor: default;
+  visibility: visible;
+  z-index: 1000;
+
+  &--hidden {
+    position: absolute;
+    visibility: hidden;
+    left: -9999px;
+  }
+
+  &__container {
+    position: absolute;
+    width: 290px;
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 55px 15px 50px;
+    background-color: #ffffff;
+
+      &--hidden {
+        left: -9999px;
+        visibility: hidden;
+      }
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__close {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    font-size: 35px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    color: #8c8c8d;
+  }
+  &__title {
+    font-family: "Exo2 Bold", arial;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+.popup__btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 20px 0;
+  width: 117px;
+  cursor: pointer;
+  color: $main-color;
+  border: none;
+  background-color: #fff;
+  
+  &--active {
+    background-color: $main-color;
+    color: #fff;
+  }
+}
+.popup__desktop-block {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .popup__mobile-block {
+    display: none;
+  }
+  .popup__desktop-block {
+    display: block;
+  }
+  .popup__container {
+    width: 580px;
+    padding: 40px;
+  }
+  .popup__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .popup__label {
+    font-size: 14px;
+    text-align: center;
+    
+    span {
+      font-weight: bold;
+    }
+  }
+  .popup__search {
+    position: relative;
+    margin: 25px 0;
+  }
+  .popup__search-input {
+    border: 1px solid $border-color;
+    width: 100%;
+    font-size: 14px;
+    padding: 9px 10px;
+    border-radius: 2px;
+  }
+  .popup__search-btn {
+    position: absolute;
+    top: 3px;
+    right: 13px;
+    width: 21px;
+    height: 22px;
+    background-image: url(../img/sprite.png);
+    background-position: -243px -121px;
+    background-color: transparent;
+    margin-top: 4px;
+    border: 0;
+    cursor: pointer;
+    visibility: visible;
+  }
+  .popup__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .popup__column {
+    width: 120px;
+    display: inline-block;
+    
+    a {
+      color: $main-color;
+    }
+  }
+  .popup__close {
+    right: -20px;
+    top: -30px;
+  }
+}

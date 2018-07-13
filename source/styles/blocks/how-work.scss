@@ -1,0 +1,108 @@
+.how-work {
+  background-color: $bg-color;
+  padding: 26px 0;
+}
+.how-work__list {
+  margin-top: 20px;
+}
+.how-work__item {
+  position: relative;
+  padding-top: 78px;
+  margin-bottom: 25px;
+  
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &--order {
+    &::before {
+      width: $how-work-order-icon-width;
+      height: $how-work-order-icon-height;
+      background-image: url('../img/sprite.png');
+      background-position: $how-work-order-icon-offset-x $how-work-order-icon-offset-y;
+    }
+  }
+  &--pay {
+    &::before {
+      width: $how-work-pay-icon-width;
+      height: $how-work-pay-icon-height;
+      background-image: url('../img/sprite.png');
+      background-position: $how-work-pay-icon-offset-x $how-work-pay-icon-offset-y;
+    }
+  }
+  &--delivery {
+    &::before {
+      width: $how-work-delivery-icon-width;
+      height: $how-work-delivery-icon-height;
+      background-image: url('../img/sprite.png');
+      background-position: $how-work-delivery-icon-offset-x $how-work-delivery-icon-offset-y;
+    }
+  }
+  &--garanty {
+    &::before {
+      width: $how-work-garant-icon-width;
+      height: $how-work-garant-icon-height;
+      background-image: url('../img/sprite.png');
+      background-position: $how-work-garant-icon-offset-x $how-work-garant-icon-offset-y;
+    }
+  }
+}
+.how-work__title {
+  font-family: 'Exo2 Bold', arial;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.how-work__text {
+  font-family: 'Arial';
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .how-work__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .how-work__item {
+    width: 48%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-work__list {
+    margin-top: 35px;
+  }
+  .how-work__item {
+//    width: 24%;
+    width: 22%;
+  }
+  .how-work__text {
+//    font-size: 16px;
+//    line-height: 25px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .how-work__item {
+    width: 24%;
+  }
+  .how-work__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

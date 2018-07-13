@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Fictitious</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__top-row">
+        <div class="wrapper">
+          <div class="page-header__call">
+            <span class="page-header__call-number">+7 (0000) 00-00-00</span>
+            <a href="#" class="page-header__call-btn">
+              <span>Обратный звонок</span>
+            </a>
+          </div>
+          
+          <div class="page-header__top-row-text">Бесплатная доставка в город Ижевск при заказе от 1000 руб.</div>
+          
+          <div class="page-header__city">
+            <label class="page-header__city-label">Ваш город:</label>
+            <div class="page-header__city-select">
+              <select name="citySelect">
+                <option value="izhevsk" selected>Ижевск</option>
+                <option value="msk">Москва</option>
+                <option value="mozhga">Можга</option>
+              </select>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="page-header__container">
+          <a class="page-header__logo" href="#">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/logo-large.png">
+              <img class="page-header__logo-image" src="img/logo.png" alt="Fictitious Интернет магазин">
+            </picture>
+          </a>
+          <div class="page-header__service">
+            <ul class="service-nav">
+              <li class="service-nav__item">
+                <a href="#" class="service-nav__link">Адреса магазинов</a>
+              </li>
+              <li class="service-nav__item">
+                <a href="#" class="service-nav__link">Доставка и сборка</a>
+              </li>
+              <li class="service-nav__item">
+                <a href="#" class="service-nav__link">Оплата</a>
+              </li>
+              <li class="service-nav__item">
+                <a href="#" class="service-nav__link">Консультант</a>
+              </li>
+              <li class="service-nav__item">
+                <a href="#" class="service-nav__link">Информация</a>
+              </li>
+              <li class="service-nav__item">
+                <a href="#" class="service-nav__link">О компании</a>
+              </li>
+              <li class="service-nav__item">
+                <a href="#" class="service-nav__link">Контакты</a>
+              </li>
+            </ul>
+            
+            <div class="page-header__search">
+              <input type="text" class="page-header__search-input" placeholder="Поиск по каталогу">
+              <button class="page-header__search-btn"><i></i></button>
+            </div>
+            <a href="#" class="page-header__cart">
+              <span class="page-header__cart-value">0</span>
+              <i></i>
+            </a>
+          </div>
+        </div>
+      
+        <nav class="top-nav">
+          <button class="top-nav__burger">
+            <span></span>
+          </button>
+          <div class="top-nav__wrapper">
+            
+            <div class="top-nav__list">
+              <ul class="nav-list">
+                <li class="nav-list__top-info">
+                  <span class="page-header__call-number  page-header__call-number--mob">+7 (0000) 00-00-00</span>
+                  <div class="page-header__city  page-header__city--mob">
+                    <label class="page-header__city-label">Ваш город:</label>
+                    <div class="page-header__city-select">
+                      <select name="citySelect">
+                        <option value="izhevsk" selected>Ижевск</option>
+                        <option value="msk">Москва</option>
+                        <option value="mozhga">Можга</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Все товары</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__title" href="#">Кухни</a>
+                      <ul class="sub-menu__list">
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Готовые кухонные</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Гарнитуры</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__title" href="#">Стулья</a>
+                    </li>
+
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__title" href="#">Столы</a>
+                      <ul class="sub-menu__list">
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Письменные</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Компьютерные</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Журнальные</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Обеденные</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Рабочие</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__title" href="#">Корпусная мебель</a>
+                      <ul class="sub-menu__list">
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Шкафы</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Стеллажи</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Полки</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Стеллажи</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Комоды</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Зеркала</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Вешалки</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Трюмо</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Стенки-горки</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Тумбы</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="sub-menu__item  sub-menu__item--higher">
+                      <a class="sub-menu__title" href="#">Мягкая мебель</a>
+                      <ul class="sub-menu__list">
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Кресла</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Банкетки</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Пуфы</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Матрасы</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Кровати</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Диваны</a>
+                        </li>
+                        <li class="sub-menu__list-item">
+                          <a class="sub-menu__list-link" href="#">Кресла-кровати</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__title" href="#">Детские комплексы</a>
+                    </li>
+
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__title" href="#">Модульные наборы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Кухни и столовые</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Кухонные гарнитуры</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Столы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Гостиные</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для гостиной</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для гостиной</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Спальни</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для спален 1</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для спален 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Прихожие</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для прихожей</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для прихожей</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Тумбочки</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Детские</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для детской 1</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для детской 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Офис</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для офиса 1</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Мебель для офиса 2</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="#">Столы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link  nav-list__link--action" href="#">Акции</a>
+                </li>
+
+                <li class="nav-list__item  nav-list__item--mob">
+                  <a class="nav-list__link  nav-list__link--mob" href="#">О компании</a>
+                </li>
+                <li class="nav-list__item  nav-list__item--mob">
+                  <a class="nav-list__link  nav-list__link--mob" href="#">Доставка и сборка</a>
+                </li>
+                <li class="nav-list__item  nav-list__item--mob">
+                  <a class="nav-list__link  nav-list__link--mob" href="#">Оплата</a>
+                </li>
+                <li class="nav-list__item  nav-list__item--mob">
+                  <a class="nav-list__link  nav-list__link--mob" href="#">Отзывы и предложения</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+      <main class="page-main">
+        <div class="wrapper">
+          <div class="main-slider">
+            <div class="main-slider__container">
+              <div class="main-slider__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/slide-large.jpg">
+                  <img class="page-header__logo-image" src="img/slide.jpg" alt="Fictitious Интернет магазин">
+                </picture>
+              </div>
+              
+              <div class="main-slider__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/slide-large.jpg">
+                  <img class="page-header__logo-image" src="img/slide.jpg" alt="Fictitious Интернет магазин">
+                </picture>
+              </div>
+              
+              <div class="main-slider__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/slide-large.jpg">
+                  <img class="page-header__logo-image" src="img/slide.jpg" alt="Fictitious Интернет магазин">
+                </picture>
+              </div>
+              
+              <div class="main-slider__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/slide-large.jpg">
+                  <img class="page-header__logo-image" src="img/slide.jpg" alt="Fictitious Интернет магазин">
+                </picture>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <section class="hits">
+          <div class="wrapper">
+            <h2 class="section-title">Хиты продаж</h2>
+            <div class="hits__list">
+           
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="img/hit-item1.jpg" alt="Кухня Лондон">
+              </div>
+              <div class="hits-slider">
+                <div class="hits-slider__container">
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item-slide.jpg" alt="Кухня Лондон">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item-slide.jpg" alt="Кухня Лондон">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item-slide.jpg" alt="Кухня Лондон">
+                  </div>
+                </div>
+              </div>
+              <div class="hits__info">
+                <a class="hits__title" href="#">Кухня &laquo;Лондон&raquo;</a>
+                <div class="hits__label">Производитель: Пенза</div>
+                <div class="hits__price">
+                  <span class="hits__price-value  hits__price-value--old">14 250 руб.</span>
+                  <span class="hits__price-value">15 050 руб.</span>
+                </div>
+                <div class="hits__add-info">
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Корпус: 
+                      <span>Венге ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--corp1"></div>
+                      <div class="hits__param-item  hits__param-item--corp2"></div>
+                    </div>
+                  </div>
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Фасад: 
+                      <span>Шимоно темный ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--facad1"></div>
+                    </div>
+                  </div>
+                  <a href="#" class="hits__param-btn">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="img/hit-item2.jpg" alt="Мини-стенка Эссен">
+              </div>
+              <div class="hits-slider">
+                <div class="hits-slider__container">
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item2.jpg" alt="Мини-стенка Эссен">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item2.jpg" alt="Мини-стенка Эссен">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item2.jpg" alt="Мини-стенка Эссен">
+                  </div>
+                </div>
+              </div>
+              <div class="hits__info">
+                <a class="hits__title" href="#">Мини-стенка &laquo;Эссен&raquo;</a>
+                <div class="hits__label">Производитель: Мебельсон</div>
+                <div class="hits__price">
+                  <span class="hits__price-value  hits__price-value--old">13 250 руб.</span>
+                  <span class="hits__price-value">12 430 руб.</span>
+                </div>
+                <div class="hits__add-info">
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Корпус: 
+                      <span>Венге ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--corp1"></div>
+                      <div class="hits__param-item  hits__param-item--corp2"></div>
+                    </div>
+                  </div>
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Фасад: 
+                      <span>Шимоно темный ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--facad1"></div>
+                    </div>
+                  </div>
+                  <a href="#" class="hits__param-btn">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="img/hit-item3.jpg" alt="Кухня Лондон">
+              </div>
+              <div class="hits-slider">
+                <div class="hits-slider__container">
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item3.jpg" alt="Кухня Лондон">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item3.jpg" alt="Кухня Лондон">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item3.jpg" alt="Кухня Лондон">
+                  </div>
+                </div>
+              </div>
+              <div class="hits__info">
+                <a class="hits__title" href="#">Кухня &laquo;Лондон&raquo;</a>
+                <div class="hits__label">Производитель: Пенза</div>
+                <div class="hits__price">
+                  <span class="hits__price-value  hits__price-value--old">14 250 руб.</span>
+                  <span class="hits__price-value">15 050 руб.</span>
+                </div>
+                <div class="hits__add-info">
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Корпус: 
+                      <span>Венге ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--corp1"></div>
+                      <div class="hits__param-item  hits__param-item--corp2"></div>
+                    </div>
+                  </div>
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Фасад: 
+                      <span>Шимоно темный ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--facad1"></div>
+                    </div>
+                  </div>
+                  <a href="#" class="hits__param-btn">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="img/hit-item1.jpg" alt="Кухня Лондон">
+              </div>
+              <div class="hits-slider">
+                <div class="hits-slider__container">
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item-slide.jpg" alt="Кухня Лондон">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item-slide.jpg" alt="Кухня Лондон">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item-slide.jpg" alt="Кухня Лондон">
+                  </div>
+                </div>
+              </div>
+              <div class="hits__info">
+                <a class="hits__title" href="#">Кухня &laquo;Лондон&raquo;</a>
+                <div class="hits__label">Производитель: Пенза</div>
+                <div class="hits__price">
+                  <span class="hits__price-value  hits__price-value--old">14 250 руб.</span>
+                  <span class="hits__price-value">15 050 руб.</span>
+                </div>
+                <div class="hits__add-info">
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Корпус: 
+                      <span>Венге ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--corp1"></div>
+                      <div class="hits__param-item  hits__param-item--corp2"></div>
+                    </div>
+                  </div>
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Фасад: 
+                      <span>Шимоно темный ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--facad1"></div>
+                    </div>
+                  </div>
+                  <a href="#" class="hits__param-btn">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="img/hit-item2.jpg" alt="Мини-стенка Эссен">
+              </div>
+              <div class="hits-slider">
+                <div class="hits-slider__container">
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item2.jpg" alt="Мини-стенка Эссен">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item2.jpg" alt="Мини-стенка Эссен">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item2.jpg" alt="Мини-стенка Эссен">
+                  </div>
+                </div>
+              </div>
+              <div class="hits__info">
+                <a class="hits__title" href="#">Мини-стенка &laquo;Эссен&raquo;</a>
+                <div class="hits__label">Производитель: Мебельсон</div>
+                <div class="hits__price">
+                  <span class="hits__price-value  hits__price-value--old">13 250 руб.</span>
+                  <span class="hits__price-value">12 430 руб.</span>
+                </div>
+                <div class="hits__add-info">
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Корпус: 
+                      <span>Венге ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--corp1"></div>
+                      <div class="hits__param-item  hits__param-item--corp2"></div>
+                    </div>
+                  </div>
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Фасад: 
+                      <span>Шимоно темный ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--facad1"></div>
+                    </div>
+                  </div>
+                  <a href="#" class="hits__param-btn">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="img/hit-item3.jpg" alt="Кухня Лондон">
+              </div>
+              <div class="hits-slider">
+                <div class="hits-slider__container">
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item3.jpg" alt="Кухня Лондон">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item3.jpg" alt="Кухня Лондон">
+                  </div>
+                  <div class="hits-slider__item">
+                    <img src="img/hit-item3.jpg" alt="Кухня Лондон">
+                  </div>
+                </div>
+              </div>
+              <div class="hits__info">
+                <a class="hits__title" href="#">Кухня &laquo;Лондон&raquo;</a>
+                <div class="hits__label">Производитель: Пенза</div>
+                <div class="hits__price">
+                  <span class="hits__price-value  hits__price-value--old">14 250 руб.</span>
+                  <span class="hits__price-value">15 050 руб.</span>
+                </div>
+                <div class="hits__add-info">
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Корпус: 
+                      <span>Венге ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--corp1"></div>
+                      <div class="hits__param-item  hits__param-item--corp2"></div>
+                    </div>
+                  </div>
+                  <div class="hits__param">
+                    <div class="hits__param-title">
+                      Фасад: 
+                      <span>Шимоно темный ЛДСП</span>
+                    </div>
+                    <div class="hits__param-row">
+                      <div class="hits__param-item  hits__param-item--facad1"></div>
+                    </div>
+                  </div>
+                  <a href="#" class="hits__param-btn">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+            <div class="hits__see-all">
+              <a href="#" class="hits__see-all-btn">Все хиты продаж</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="info">
+          <div class="wrapper">
+            <h2 class="section-title">Мебель Российских фабрик с бесплатной доставкой</h2>
+            <div class="info__list">
+            <div class="info__item  info__item--show-room">
+              <div class="info__title">Возможностью сделать заказ в шоу-руме в Ижевске</div>
+              <div class="info__text">Знаете, как получить удовольствие от покупки мебели в Интернете? Найти продавца, которому можно доверять. С 2008 года компания «Гудвик» продаёт в Ижевске мебель российских фабрик. Мы уверены в продукции, которую предлагаем, а покупатели уверены в нас.</div>
+            </div>
+
+            <div class="info__item  info__item--mebel">
+              <div class="info__title">Выбирайте хорошую мебель</div>
+              <div class="info__text">В <a href="#">каталоге интернет-магазина </a> мебели в Ижевске представлена продукция российских фабрик «Риннер», «Мебельсон», «Интерьер-Центр», «Ивару», «Аквилон». Здесь вы найдёте шкафы-купе, стеллажи и полки, стулья и столы, комоды, трюмо и обувные шкафы, кровати и мебельные стенки, мягкую мебель. Мы продаём изделия из массива, ЛДСП и МДФ. Предлагаем мебель с бюджетной фурнитурой и более дорогие варианты с шариковыми направляющими.</div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="wrapper">
+            <div class="reviews__container">
+              <div class="reviews__content">
+                <h2 class="reviews__title  section-title">
+                  Отзывы о нас
+                  <a href="#">Все отзывы</a>
+                </h2>
+                <div class="reviews-slider">
+              <div class="reviews-slider__container">
+
+                <div class="reviews-slider__item">
+                  <div class="reviews-slider__text">Заказали модульную кухню, все привезли, все понравилось. Хороший ассортимент и большой выбор. Спасибо. Рекомендую)))</div>
+                  <div class="reviews-slider__signature">07.03.2017 Лилия, Ижевск</div>
+                </div>
+
+                <div class="reviews-slider__item">
+                  <div class="reviews-slider__text">Хороший ассортимент и большой выбор. Спасибо. Рекомендую)))</div>
+                  <div class="reviews-slider__signature">07.03.2017 Вася, Ижевск</div>
+                </div>
+
+                <div class="reviews-slider__item">
+                  <div class="reviews-slider__text">Заказали модульную кухню, все привезли, все понравилось. Рекомендую)))</div>
+                  <div class="reviews-slider__signature">07.03.2017 Юлия, Ижевск</div>
+                </div>
+              </div>
+            </div>
+              </div>
+              <div class="reviews__images">
+                <img src="img/review-image1.jpg" alt="Благодарственное письмо">
+                <img src="img/review-image2.jpg" alt="Благодарственное письмо">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="how-work">
+          <div class="wrapper">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="how-work__list">
+
+            <div class="how-work__item  how-work__item--order">
+              <div class="how-work__title">Заявка</div>
+              <div class="how-work__text">
+                <p>Принимаем заказы 24/7.</p>
+                <p>Перезваниваем в течение 10 минут в рабочее время с 9:00 до 20:00</p>
+              </div>
+            </div>
+
+            <div class="how-work__item  how-work__item--pay">
+              <div class="how-work__title">Оплата</div>
+              <div class="how-work__text">
+                <p>Оплату принимаем на сайте, на р/с, наличными курьеру или в магазине «Ижевская мебель».</p>
+              </div>
+            </div>
+
+            <div class="how-work__item  how-work__item--delivery">
+              <div class="how-work__title">Доставка</div>
+              <div class="how-work__text">
+                <p>Доставка два раза в неделю (вт, чт).</p>
+                <p>Если товар в наличии, то вы получаете его в течение 4 дней.</p>
+              </div>
+            </div>
+
+            <div class="how-work__item  how-work__item--garanty">
+              <div class="how-work__title">Гарантия</div>
+              <div class="how-work__text">
+                <p>Гарантия от 12 до 18 месяцев.</p>
+                <p>Если мебель не подошла, оформляем возврат в течение 7 дней.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="wrapper">
+            <h2 class="section-title">6 причин купить мебель в «Fictitious»</h2>
+            <div class="features__list">
+
+            <div class="features__item  features__item--delivery">
+              <div class="features__title">Бесплатная доставка</div>
+              <div class="features__text">В черте города доставка до подъезда бесплатна при любой сумме заказа</div>
+            </div>
+
+            <div class="features__item  features__item--show-room">
+              <div class="features__title">Шоу-рум склад в Ижевске</div>
+              <div class="features__text">Оценивайте качество в магазине «Ижевская мебель» на ул. Пойма, 7</div>
+            </div>
+
+            <div class="features__item  features__item--loaders">
+              <div class="features__title">Грузчики не подводят</div>
+              <div class="features__text">Напоминаем о доставке за день и за час до назначенного времени</div>
+            </div>
+
+            <div class="features__item  features__item--reglament">
+              <div class="features__title">Всё по правилам</div>
+              <div class="features__text">Вы получаете гарантийный талон, товарный и кассовый чеки</div>
+            </div>
+
+            <div class="features__item  features__item--credit">
+              <div class="features__title">Можно в кредит</div>
+              <div class="features__text">Кредит предоставляет ОТП-банк, «Альфа-банк», банк «Русский Стандарт».</div>
+            </div>
+
+            <div class="features__item  features__item--economy">
+              <div class="features__title">Экономия</div>
+              <div class="features__text">
+                <p>Акции и распродажи каждый месяц.</p>
+                <p>Скидки 10%, 20%, 30% смотрите в разделе «Акции»</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        
+        <section class="offer">
+          <div class="wrapper">
+            <div class="offer__container">
+              <h2 class="section-title">Ищут везде - покупают в &laquo;Fictitious&raquo;</h2>
+              <div class="offer__text">
+                <p>Мы предлагаем доступную мебель фабричного производства и делаем всё, чтобы вы получили заказ без задержек.</p>
+                <p>Чтобы купить мебель в интернет-магазине «FICTITIOUS», оформите заказпо телефону +7 (0000) 00-00-00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+    <footer class="page-footer">
+      <div class="wrapper">
+        <div class="page-footer__container">
+        <div class="page-footer__columns">
+          <div class="page-footer__column">
+            <div class="page-footer__title">Компания</div>
+            <div class="page-footer__text">
+              <ul>
+                <li>
+                  <a href="#">О компании</a>
+                </li>
+                <li>
+                  <a href="#">Производители</a>
+                </li>
+                <li>
+                  <a href="#">Реквизиты</a>
+                </li>
+                <li>
+                  <a href="#">Условия возврата</a>
+                </li>
+                <li>
+                  <a href="#">Сотрудничество</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="page-footer__column">
+            <div class="page-footer__title">Интернет-магазин</div>
+            <div class="page-footer__text">
+              <ul>
+                <li>
+                  <a href="#">Доставка и сборка</a>
+                </li>
+                <li>
+                  <a href="#">Оплата</a>
+                </li>
+                <li>
+                  <a href="#">Акции</a>
+                </li>
+                <li>
+                  <a href="#">Отзывы и предложения</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="page-footer__column">
+            <div class="page-footer__title">Контакты</div>
+            <div class="page-footer__text">
+              <p>г. Ижевск, ул. Пойма, 7 ТЦ «Дом», комната 2</p>
+              <p>+7 (0000) 00-00-00</p>
+              <p>mebel@fictitios.ru</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-footer__payments  payments">
+          <div class="payments__title">Мы принимаем к оплате</div>
+          <div class="payments__list">
+            <div class="payments__item  payments__item--ya-kassa"></div>
+            <div class="payments__item  payments__item--visa"></div>
+            <div class="payments__item  payments__item--mc"></div>
+          </div>
+        </div>
+      </div>
+
+        <div class="page-footer__bottom-row">
+        <div class="page-footer__copyright">© 2017, «FICTITIOUS» интернет-магазин мебели</div>
+        <a href="#">Карта сайта</a>
+        <div class="page-footer__made-by">
+          Сделано в 
+          <a href="#">DLRG</a>
+        </div>
+      </div>
+      </div>
+    </footer>
+    
+    <div class="popup">
+      <div class="popup__container">
+        <div class="popup__wrapper">
+          <div class="popup__close" data-popup-close>×</div>
+          <div class="popup__mobile-block">
+            <div class="popup__title">Ваш город Ижевск?</div>
+            <div class="popup__buttons">
+              <button class="popup__btn" data-popup-close>Нет</button>
+              <button class="popup__btn  popup__btn--active" data-popup-close>Да</button>
+            </div>
+          </div>
+          <div class="popup__desktop-block">
+            <div class="popup__title">Ваш город Ижевск?</div>
+            <div class="popup__label">Если вашего города нет в списке, выберите город <span>Ижевск</span></div>
+            <div class="popup__search">
+              <input type="text" class="popup__search-input" placeholder="Введите Ваш город">
+              <button class="popup__search-btn"></button>
+            </div>
+            <div class="popup__list">
+              <ul class="popup__column">
+                <li>
+                  <a href="#">Москва</a>
+                </li>
+                <li>
+                  <a href="#">Санкт-Петербург</a>
+                </li>
+                <li>
+                  <a href="#">Архангельск</a>
+                </li>
+                <li>
+                  <a href="#">Владивосток</a>
+                </li>
+              </ul>
+              
+              <ul class="popup__column">
+                <li>
+                  <a href="#">Волгоград</a>
+                </li>
+                <li>
+                  <a href="#">Воронеж</a>
+                </li>
+                <li>
+                  <a href="#">Екатеринбург</a>
+                </li>
+                <li>
+                  <a href="#">Ижевск</a>
+                </li>
+              </ul>
+              
+              <ul class="popup__column">
+                <li>
+                  <a href="#">Иркутск</a>
+                </li>
+                <li>
+                  <a href="#">Казань</a>
+                </li>
+                <li>
+                  <a href="#">Кемерово</a>
+                </li>
+                <li>
+                  <a href="#">Краснодар</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div id="scroller" class="to-top">
+      <span class="to-top__btn">Вверх</span>
+    </div>
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slinky.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

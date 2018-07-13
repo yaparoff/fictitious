@@ -1,0 +1,120 @@
+.nav-list__link {
+  position: relative;
+  display: block;
+  font-family: "Exo2 Bold", arial;
+  font-size: 15px;
+  color: $main-color;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-bottom: 1px solid $border-color;
+  background-color: #fff;
+  
+  &::after {
+    position: absolute;
+    content: '';
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 4px solid transparent;	
+    border-left: 4px solid $main-color;
+  }
+  &--action {
+    color: $service-color;
+    
+    &::after {
+      border-left: 4px solid $service-color;
+    }
+  }
+  &--mob {
+    background-color: $main-color;
+    color: #fff;
+    
+    &::after {
+      border-left: 4px solid #fff;
+    }
+  }
+}
+.nav-list__top-info {
+  padding: 14px 15px 0;
+  background-color: $bg-color;
+}
+
+@media (min-width: $desktop-width) {
+  .nav-list {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list__item {
+    
+    &:hover {
+      .sub-menu {
+        left: 0;
+//        bottom: -456px;
+        top: 20px;
+        visibility: visible;
+        max-height: 460px;
+      }
+    }
+    &--mob {
+      display: none;
+    }
+  }
+  .nav-list__link {
+    position: relative;
+    font-family: "Exo2 Bold", arial;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+    color: $main-color;
+    border: none;
+    
+    &::before {
+      position: absolute;
+      bottom: 7px;
+      left: 0;
+      content: '';
+      width: 0;
+      height: 3px;
+      background-color: $service-color;
+      transition: all .2s ease-out;
+    }
+    &::after {
+      display: none;
+    }
+    
+    &:hover {
+      &::before {
+        width: 105%;
+      }
+    }
+    &--action {
+      color: $service-color;
+    }
+  }
+  .nav-list__top-info {
+    display: none;
+  }
+}
+
+@media (min-width: $large-width) {
+  .nav-list__link {
+    font-size: 16px;
+    line-height: 30px;
+    
+    &::before {
+      bottom: 9px;
+    }
+  }
+  .nav-list__item {
+    &:hover {
+      .sub-menu {
+        top: 37px;
+      }
+    }
+  }
+}

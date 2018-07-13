@@ -1,0 +1,112 @@
+.info {
+  padding: 25px 0;
+  margin-bottom: 25px;
+  background-color: $bg-color;
+}
+.info__list {
+  margin-top: 23px;
+}
+.info__item {
+  position: relative;
+  padding-top: 150px;
+  margin-bottom: 20px;
+  
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  &--show-room {
+    &::after {
+      top: 30px;
+      width: $info2-icon-width;
+      height: $info2-icon-height;
+      background-image: url('../img/sprite.png');
+      background-position: $info2-icon-offset-x $info2-icon-offset-y;
+    }
+  }
+  &--mebel {
+    &::after {
+      top: 30px;
+      width: $info1-icon-width;
+      height: $info1-icon-height;
+      background-image: url('../img/sprite.png');
+      background-position: $info1-icon-offset-x $info1-icon-offset-y;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.info__title {
+  font-family: 'Exo2 Bold', arial;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.info__text {
+  font-size: 15px;
+  line-height: 22px;
+  color: #363636;
+  text-align: justify;
+  
+  a {
+    color: $service-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .info__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .info__item {
+    width: 46%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    padding: 70px 0 60px;
+    margin-bottom: 0;
+  }
+  .info__list {
+    width: 820px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+  }
+  .info__item {
+    width: 48%;
+    padding-top: 160px;
+    
+    &::before {
+      left: 0;
+      transform: translate(0, 0);
+    }
+    &::after {
+      left: 65px;
+    }
+  }
+  .info__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

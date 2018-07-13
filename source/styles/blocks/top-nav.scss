@@ -1,0 +1,101 @@
+.top-nav {
+  position: relative;
+  margin: 0 -15px 0;
+}
+.top-nav__wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+  margin-top: -55px;
+  visibility: hidden;
+  left: -9999px;
+  
+  &--opened {
+    visibility: visible;
+    left: 0;
+  }
+}
+.top-nav__burger {
+  position: absolute;
+  top: -44px;
+  left: 0;
+  width: 24px;
+  height: 35px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  transition: all .2s ease-out;
+  z-index: 500;
+  
+  span {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    background-color: $main-color;
+    transition: all .25s ease-out;
+    transition-delay: .1s;
+    
+    &::before,
+    &::after {
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      content: '';
+      left: 0;
+      top: 50%;
+      background-color: $main-color;
+      transition: all .25s ease-out;
+      transition-delay: 0s;
+    }
+    &::before {
+      margin-top: -10px;
+    }
+    &::after {
+      margin-top: 8px;
+    }
+  }
+  &--opened {
+    left: auto;
+    right: 15px;
+    
+    span {
+      background-color: transparent;
+      transition-delay: 0s;
+      
+      &::before {
+        margin-top: -3px;
+        transform: rotate(45deg);
+        transition-delay: .1s;
+      }
+      &::after {
+        margin-top: -3px;
+        transform: rotate(-45deg);
+        transition-delay: .1s;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-nav {
+    margin: 0;
+  }
+  .top-nav__burger {
+    display: none;
+  }
+  .top-nav__wrapper {
+    position: relative;
+    display: block;
+    visibility: hidden;
+    position: static;
+    visibility: visible;
+    left: 0;
+    margin-top: 0;
+  }
+}

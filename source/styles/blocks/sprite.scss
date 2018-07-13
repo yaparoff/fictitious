@@ -1,0 +1,299 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$cart-icon-name: 'cart_icon';
+$cart-icon-x: 243px;
+$cart-icon-y: 90px;
+$cart-icon-offset-x: -243px;
+$cart-icon-offset-y: -90px;
+$cart-icon-width: 22px;
+$cart-icon-height: 31px;
+$cart-icon-total-width: 273px;
+$cart-icon-total-height: 239px;
+$cart-icon-image: 'sprite.png';
+$cart-icon: (243px, 90px, -243px, -90px, 22px, 31px, 273px, 239px, 'sprite.png', 'cart_icon', );
+$features-city-name: 'features-city';
+$features-city-x: 124px;
+$features-city-y: 127px;
+$features-city-offset-x: -124px;
+$features-city-offset-y: -127px;
+$features-city-width: 65px;
+$features-city-height: 56px;
+$features-city-total-width: 273px;
+$features-city-total-height: 239px;
+$features-city-image: 'sprite.png';
+$features-city: (124px, 127px, -124px, -127px, 65px, 56px, 273px, 239px, 'sprite.png', 'features-city', );
+$features-credit-name: 'features-credit';
+$features-credit-x: 128px;
+$features-credit-y: 64px;
+$features-credit-offset-x: -128px;
+$features-credit-offset-y: -64px;
+$features-credit-width: 60px;
+$features-credit-height: 58px;
+$features-credit-total-width: 273px;
+$features-credit-total-height: 239px;
+$features-credit-image: 'sprite.png';
+$features-credit: (128px, 64px, -128px, -64px, 60px, 58px, 273px, 239px, 'sprite.png', 'features-credit', );
+$features-delivery-name: 'features-delivery';
+$features-delivery-x: 0px;
+$features-delivery-y: 127px;
+$features-delivery-offset-x: 0px;
+$features-delivery-offset-y: -127px;
+$features-delivery-width: 63px;
+$features-delivery-height: 64px;
+$features-delivery-total-width: 273px;
+$features-delivery-total-height: 239px;
+$features-delivery-image: 'sprite.png';
+$features-delivery: (0px, 127px, 0px, -127px, 63px, 64px, 273px, 239px, 'sprite.png', 'features-delivery', );
+$features-economy-name: 'features-economy';
+$features-economy-x: 64px;
+$features-economy-y: 0px;
+$features-economy-offset-x: -64px;
+$features-economy-offset-y: 0px;
+$features-economy-width: 64px;
+$features-economy-height: 64px;
+$features-economy-total-width: 273px;
+$features-economy-total-height: 239px;
+$features-economy-image: 'sprite.png';
+$features-economy: (64px, 0px, -64px, 0px, 64px, 64px, 273px, 239px, 'sprite.png', 'features-economy', );
+$features-loadres-name: 'features-loadres';
+$features-loadres-x: 0px;
+$features-loadres-y: 64px;
+$features-loadres-offset-x: 0px;
+$features-loadres-offset-y: -64px;
+$features-loadres-width: 65px;
+$features-loadres-height: 63px;
+$features-loadres-total-width: 273px;
+$features-loadres-total-height: 239px;
+$features-loadres-image: 'sprite.png';
+$features-loadres: (0px, 64px, 0px, -64px, 65px, 63px, 273px, 239px, 'sprite.png', 'features-loadres', );
+$features-regulations-name: 'features-regulations';
+$features-regulations-x: 65px;
+$features-regulations-y: 64px;
+$features-regulations-offset-x: -65px;
+$features-regulations-offset-y: -64px;
+$features-regulations-width: 52px;
+$features-regulations-height: 63px;
+$features-regulations-total-width: 273px;
+$features-regulations-total-height: 239px;
+$features-regulations-image: 'sprite.png';
+$features-regulations: (65px, 64px, -65px, -64px, 52px, 63px, 273px, 239px, 'sprite.png', 'features-regulations', );
+$hits-facad-color1-name: 'hits-facad-color1';
+$hits-facad-color1-x: 243px;
+$hits-facad-color1-y: 30px;
+$hits-facad-color1-offset-x: -243px;
+$hits-facad-color1-offset-y: -30px;
+$hits-facad-color1-width: 30px;
+$hits-facad-color1-height: 30px;
+$hits-facad-color1-total-width: 273px;
+$hits-facad-color1-total-height: 239px;
+$hits-facad-color1-image: 'sprite.png';
+$hits-facad-color1: (243px, 30px, -243px, -30px, 30px, 30px, 273px, 239px, 'sprite.png', 'hits-facad-color1', );
+$hits-param-color1-name: 'hits-param-color1';
+$hits-param-color1-x: 243px;
+$hits-param-color1-y: 0px;
+$hits-param-color1-offset-x: -243px;
+$hits-param-color1-offset-y: 0px;
+$hits-param-color1-width: 30px;
+$hits-param-color1-height: 30px;
+$hits-param-color1-total-width: 273px;
+$hits-param-color1-total-height: 239px;
+$hits-param-color1-image: 'sprite.png';
+$hits-param-color1: (243px, 0px, -243px, 0px, 30px, 30px, 273px, 239px, 'sprite.png', 'hits-param-color1', );
+$hits-param-color2-name: 'hits-param-color2';
+$hits-param-color2-x: 243px;
+$hits-param-color2-y: 60px;
+$hits-param-color2-offset-x: -243px;
+$hits-param-color2-offset-y: -60px;
+$hits-param-color2-width: 30px;
+$hits-param-color2-height: 30px;
+$hits-param-color2-total-width: 273px;
+$hits-param-color2-total-height: 239px;
+$hits-param-color2-image: 'sprite.png';
+$hits-param-color2: (243px, 60px, -243px, -60px, 30px, 30px, 273px, 239px, 'sprite.png', 'hits-param-color2', );
+$how-work-delivery-icon-name: 'how-work-delivery_icon';
+$how-work-delivery-icon-x: 191px;
+$how-work-delivery-icon-y: 63px;
+$how-work-delivery-icon-offset-x: -191px;
+$how-work-delivery-icon-offset-y: -63px;
+$how-work-delivery-icon-width: 46px;
+$how-work-delivery-icon-height: 63px;
+$how-work-delivery-icon-total-width: 273px;
+$how-work-delivery-icon-total-height: 239px;
+$how-work-delivery-icon-image: 'sprite.png';
+$how-work-delivery-icon: (191px, 63px, -191px, -63px, 46px, 63px, 273px, 239px, 'sprite.png', 'how-work-delivery_icon', );
+$how-work-garant-icon-name: 'how-work-garant_icon';
+$how-work-garant-icon-x: 128px;
+$how-work-garant-icon-y: 0px;
+$how-work-garant-icon-offset-x: -128px;
+$how-work-garant-icon-offset-y: 0px;
+$how-work-garant-icon-width: 63px;
+$how-work-garant-icon-height: 64px;
+$how-work-garant-icon-total-width: 273px;
+$how-work-garant-icon-total-height: 239px;
+$how-work-garant-icon-image: 'sprite.png';
+$how-work-garant-icon: (128px, 0px, -128px, 0px, 63px, 64px, 273px, 239px, 'sprite.png', 'how-work-garant_icon', );
+$how-work-order-icon-name: 'how-work-order_icon';
+$how-work-order-icon-x: 191px;
+$how-work-order-icon-y: 0px;
+$how-work-order-icon-offset-x: -191px;
+$how-work-order-icon-offset-y: 0px;
+$how-work-order-icon-width: 52px;
+$how-work-order-icon-height: 63px;
+$how-work-order-icon-total-width: 273px;
+$how-work-order-icon-total-height: 239px;
+$how-work-order-icon-image: 'sprite.png';
+$how-work-order-icon: (191px, 0px, -191px, 0px, 52px, 63px, 273px, 239px, 'sprite.png', 'how-work-order_icon', );
+$how-work-pay-icon-name: 'how-work-pay_icon';
+$how-work-pay-icon-x: 63px;
+$how-work-pay-icon-y: 127px;
+$how-work-pay-icon-offset-x: -63px;
+$how-work-pay-icon-offset-y: -127px;
+$how-work-pay-icon-width: 61px;
+$how-work-pay-icon-height: 64px;
+$how-work-pay-icon-total-width: 273px;
+$how-work-pay-icon-total-height: 239px;
+$how-work-pay-icon-image: 'sprite.png';
+$how-work-pay-icon: (63px, 127px, -63px, -127px, 61px, 64px, 273px, 239px, 'sprite.png', 'how-work-pay_icon', );
+$info1-icon-name: 'info1_icon';
+$info1-icon-x: 0px;
+$info1-icon-y: 0px;
+$info1-icon-offset-x: 0px;
+$info1-icon-offset-y: 0px;
+$info1-icon-width: 64px;
+$info1-icon-height: 64px;
+$info1-icon-total-width: 273px;
+$info1-icon-total-height: 239px;
+$info1-icon-image: 'sprite.png';
+$info1-icon: (0px, 0px, 0px, 0px, 64px, 64px, 273px, 239px, 'sprite.png', 'info1_icon', );
+$info2-icon-name: 'info2_icon';
+$info2-icon-x: 191px;
+$info2-icon-y: 126px;
+$info2-icon-offset-x: -191px;
+$info2-icon-offset-y: -126px;
+$info2-icon-width: 44px;
+$info2-icon-height: 64px;
+$info2-icon-total-width: 273px;
+$info2-icon-total-height: 239px;
+$info2-icon-image: 'sprite.png';
+$info2-icon: (191px, 126px, -191px, -126px, 44px, 64px, 273px, 239px, 'sprite.png', 'info2_icon', );
+$payments-mc-name: 'payments-mc';
+$payments-mc-x: 0px;
+$payments-mc-y: 212px;
+$payments-mc-offset-x: 0px;
+$payments-mc-offset-y: -212px;
+$payments-mc-width: 43px;
+$payments-mc-height: 27px;
+$payments-mc-total-width: 273px;
+$payments-mc-total-height: 239px;
+$payments-mc-image: 'sprite.png';
+$payments-mc: (0px, 212px, 0px, -212px, 43px, 27px, 273px, 239px, 'sprite.png', 'payments-mc', );
+$payments-visa-name: 'payments-visa';
+$payments-visa-x: 103px;
+$payments-visa-y: 191px;
+$payments-visa-offset-x: -103px;
+$payments-visa-offset-y: -191px;
+$payments-visa-width: 45px;
+$payments-visa-height: 13px;
+$payments-visa-total-width: 273px;
+$payments-visa-total-height: 239px;
+$payments-visa-image: 'sprite.png';
+$payments-visa: (103px, 191px, -103px, -191px, 45px, 13px, 273px, 239px, 'sprite.png', 'payments-visa', );
+$payments-yakassa-name: 'payments-yakassa';
+$payments-yakassa-x: 0px;
+$payments-yakassa-y: 191px;
+$payments-yakassa-offset-x: 0px;
+$payments-yakassa-offset-y: -191px;
+$payments-yakassa-width: 103px;
+$payments-yakassa-height: 21px;
+$payments-yakassa-total-width: 273px;
+$payments-yakassa-total-height: 239px;
+$payments-yakassa-image: 'sprite.png';
+$payments-yakassa: (0px, 191px, 0px, -191px, 103px, 21px, 273px, 239px, 'sprite.png', 'payments-yakassa', );
+$search-icon-name: 'search_icon';
+$search-icon-x: 243px;
+$search-icon-y: 121px;
+$search-icon-offset-x: -243px;
+$search-icon-offset-y: -121px;
+$search-icon-width: 21px;
+$search-icon-height: 22px;
+$search-icon-total-width: 273px;
+$search-icon-total-height: 239px;
+$search-icon-image: 'sprite.png';
+$search-icon: (243px, 121px, -243px, -121px, 21px, 22px, 273px, 239px, 'sprite.png', 'search_icon', );
+$spritesheet-width: 273px;
+$spritesheet-height: 239px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($cart-icon, $features-city, $features-credit, $features-delivery, $features-economy, $features-loadres, $features-regulations, $hits-facad-color1, $hits-param-color1, $hits-param-color2, $how-work-delivery-icon, $how-work-garant-icon, $how-work-order-icon, $how-work-pay-icon, $info1-icon, $info2-icon, $payments-mc, $payments-visa, $payments-yakassa, $search-icon, );
+$spritesheet: (273px, 239px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.sub-menu {
+  z-index: 300;
+  top: -200px;
+}
+.sub-menu__link,
+.sub-menu__title,
+.sub-menu__list-link {
+  position: relative;
+  display: block;
+  font-family: "Exo2 Bold", arial;
+  font-size: 15px;
+  color: $main-color;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-bottom: 1px solid $border-color;
+  background-color: #fff;
+  
+  &::after {
+    position: absolute;
+    content: '';
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 4px solid transparent;	
+    border-left: 4px solid $main-color;
+  }
+  &--action {
+    color: $service-color;
+    
+    &::after {
+      border-left: 4px solid $service-color;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub-menu {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: -9999px;
+//    width: 1000px;
+//    min-height: 100px;
+    max-width: 950px;
+    height: 460px;
+//    max-height: 460px;
+    padding: 45px 70px 20px 28px;
+    background-color: #fff;
+    z-index: 200;
+    visibility: hidden;
+    max-height: 0;
+    column-count: 4;
+    column-gap: 100px;
+//    transition: max-height 0.4s ease-out;
+  }
+  
+  .sub-menu__column {
+//    width: 170px;
+  }
+  .sub-menu__item {
+    display: inline-block;
+    width: 170px;
+    margin-bottom: 30px;
+    
+    &--higher {
+      margin-bottom: 160px;
+    }
+  }
+  .sub-menu__title {
+    font-family: 'Exo2 Bold', arial;
+    font-weight: 600;
+    font-size: 14px;
+    color: $main-color;
+    text-transform: uppercase;
+    padding: 0;
+    border-bottom: none;
+    
+    &::after {
+      display: none;
+    }
+  }
+  .sub-menu__link {
+    font-size: 14px;
+    padding: 0;
+    border-bottom: none;
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  .sub-menu__list-link {
+    font-family: 'Exo2', arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $main-color;
+    padding: 0;
+    border-bottom: none;
+    text-transform: none;
+    
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $large-width) {
+  .sub-menu {
+    max-width: 1180px;
+    column-gap: 150px;
+  }
+}

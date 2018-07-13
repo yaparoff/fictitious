@@ -1,0 +1,27 @@
+.mob-list__link {
+  position: relative;
+  display: block;
+  font-family: "Exo2 Bold", arial;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-bottom: 1px solid #474747;
+  background-color: $main-color;
+  
+  &::after {
+    position: absolute;
+    content: '';
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 4px solid transparent;	
+    border-left: 4px solid #fff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mob-list {
+    display: none;
+  }
+}
