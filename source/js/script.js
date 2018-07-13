@@ -42,7 +42,9 @@ $(document).ready(function(){
     return false;
   });
   
-  
+//  $('.hits__item').on('hover', function() {
+//    $(this).find('.hits__image').hide(400);
+//  });
   
   var $burger = $('.top-nav__burger');
   var $menu = $('.top-nav__wrapper');
