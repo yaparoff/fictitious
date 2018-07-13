@@ -1,5 +1,5 @@
 Fictitious
 
 To start:
-npm i
+npm i;
 npm start
